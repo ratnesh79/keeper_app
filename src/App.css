@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.navbar{
+  background-color: orange;
+  padding: 6px;
   color: white;
+  box-shadow: 0 1px 5px 2px rgb(218, 182, 117);
 }
+.navbar h4{
+  margin-left: 100px;
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.footer{
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  margin:auto;
+}
+.form_main_note{
+  box-shadow: 0px 2px 5px 0 grey;
+    /* border: 1px solid; */
+    width: 25%;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+input{
+  font-family: cursive;
+  font-size: 20px;
+  margin: 10px;
+  display: block;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  color: black;
+  text-transform: capitalize;
+}
+textarea{
+  font-family: cursive;
+  text-transform: capitalize;
+  border: none;
+    outline: none;
+    margin: 10px;
+}
+form .btn{
+  border-radius: 46%;
+    /* height: 23px; */
+    /* padding: 10px; */
+    position: relative;
+    left: 200px;
+    top: 14px;
+    color: rgb(241, 185, 81);
   }
-  to {
-    transform: rotate(360deg);
+  .Note .btn{
+  border-radius: 46%;
+  position: relative;
+  left: 200px;
+  top: 25px;
+  color: rgb(241, 185, 81);
+}
+.Note{
+  width: 24%;
+  border-radius: 15px;
+  box-shadow: 0px 2px 5px 0 grey;
+  padding: 10px;
+  height: auto;
+  box-sizing: border-box;
+    margin: 10px;
+    float: left;
+    margin-top: 50px;
+}
+.Note h4{
+  font-family: cursive;
+}
+.Note p{
+  font-size: 13px;
+  font-family: cursive;
+}
+@media screen and (max-width:610px) {
+  .navbar h4{
+    font-size: 15px;
   }
+  .form_main_note{
+    width: 80%;
+    height: 90px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  input{
+    font-size: 12px;
+    margin: 10px;
+  }
+  textarea{
+    
+    margin: 4px;
+    font-size: 6px;
+    width: 260px;
+  }
+  .MuiSvgIcon-root{
+    font-size: 10px;
+  }
+  .Note{
+    width: 42%;
+    margin-top: 20px;
+  }
+  .Note h4{
+    font-size: 12px;
+  }
+  .Note p{
+    font-size: 8px;
+    
+  }
+  .Note .btn{
+    left:55px
+  }
+  form .btn{
+    top:0;
+  }
+  
 }
